@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TraitDef>
+    <defName>ZenNaturalist</defName>
+    <commonality>0.8</commonality>
+    <degreeDatas>
+      <li>
+        <label>Zen naturalist</label>
+        <description>{PAWN_nameDef} has spent an extensive amount of time meditating in nature. They are very attuned to the natural world around them, and find peace among the trees.</description>
+        <allowedMeditationFocusTypes>
+          <li>Natural</li>
+        </allowedMeditationFocusTypes>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+  
+</Defs>
