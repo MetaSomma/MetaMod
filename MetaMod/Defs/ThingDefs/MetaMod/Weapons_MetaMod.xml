@@ -1,74 +1,70 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-  <ThingDef ParentName="MeleeWeaponUltratech">
-    <defName>MeleeWeapon_MetaSword</defName>
-    <label>metasword</label>
-    <description>A very mysterious blade that seems to be both there and not at the same time.</description>
-    <soundInteract>Interact_MonoSword</soundInteract>
-    <meleeHitSound>MeleeHit_MonoSword</meleeHitSound>
-    <equippedAngleOffset>-65</equippedAngleOffset>
-    <relicChance>3</relicChance>
-    <smeltable>false</smeltable>
-    <weaponClasses>
-      <li>MeleePiercer</li>
-    </weaponClasses>
-    <graphicData>
-      <texPath>Things/Item/Equipment/WeaponMelee/Monosword</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-	<tradeability>None</tradeability>
-	<equippedStatOffsets>
-      <MoveSpeed>10</MoveSpeed>
-	  <PsychicSensitivity>10</PsychicSensitivity>
-	  <PainShockThreshold>0.99</PainShockThreshold>
-    </equippedStatOffsets>
-    <tools>
-      <li>
-        <label>handle</label>
-        <capacities>
-          <li>Blunt</li>
-        </capacities>
-        <power>25</power>
-        <cooldownTime>0.5</cooldownTime>
-      </li>
-      <li>
-        <label>point</label>
-        <capacities>
-          <li>Stab</li>
-        </capacities>
-        <power>55</power>
-        <cooldownTime>0.5</cooldownTime>
-        <armorPenetration>0.9</armorPenetration>
-      </li>
-      <li>
-        <label>edge</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>55</power>
-        <cooldownTime>0.5</cooldownTime>
-        <armorPenetration>0.9</armorPenetration>
-      </li>
-    </tools>
-  </ThingDef>
-  
+    
+	<ThingDef ParentName="MeleeWeaponUltratech">
+		<defName>MeleeWeapon_MetaSword</defName>
+		<label>metasword</label>
+		<description>A very mysterious blade that seems to be both there and not at the same time.</description>
+		<soundInteract>Interact_MonoSword</soundInteract>
+		<meleeHitSound>MeleeHit_MonoSword</meleeHitSound>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<relicChance>3</relicChance>
+		<smeltable>false</smeltable>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Monosword</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tradeability>None</tradeability>
+		<equippedStatOffsets>
+			<MoveSpeed>10</MoveSpeed>
+			<PsychicSensitivity>10</PsychicSensitivity>
+			<PainShockThreshold>0.99</PainShockThreshold>
+		</equippedStatOffsets>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>0.5</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>55</power>
+				<cooldownTime>0.5</cooldownTime>
+				<armorPenetration>0.9</armorPenetration>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>55</power>
+				<cooldownTime>0.5</cooldownTime>
+				<armorPenetration>0.9</armorPenetration>
+			</li>
+		</tools>
+	</ThingDef>
+	
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>EldritchWhispers</defName>
 		<label>eldritch whispers</label>
 		<description>This forbidden artifact emits whispers from beyond the veil, shattering the minds of those who hear it.</description>
-
 		<graphicData>
 			<texPath>Things/Item/Weapon/EldritchWhispers</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-
 		<techLevel>Industrial</techLevel>
-
 		<weaponTags>
 			<li>PsychicWeapon</li>
 		</weaponTags>
-
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -77,24 +73,22 @@
 				<range>25</range>
 			</li>
 		</verbs>
-
 		<costList>
 			<Steel>50</Steel>
 			<ComponentIndustrial>4</ComponentIndustrial>
-			<!-- <PsychicAmplifier>1</PsychicAmplifier> --> <!-- Optional modded material -->
+			<!-- <PsychicAmplifier>1</PsychicAmplifier> -->
+			<!-- Optional modded material -->
 		</costList>
-
 		<statBases>
 			<WorkToMake>300</WorkToMake>
 			<Mass>2.5</Mass>
 			<RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
 		</statBases>
-
 		<comps>
 			<li>
 				<compClass>MetaMod.CompCauseInsanity</compClass>
 			</li>
 		</comps>
 	</ThingDef>
-
+	
 </Defs>
