@@ -80,7 +80,7 @@
 			<!-- Optional modded material -->
 		</costList>
 		<statBases>
-			<WorkToMake>300</WorkToMake>
+			<WorkToMake>3000</WorkToMake>
 			<Mass>2.5</Mass>
 			<RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
 		</statBases>
